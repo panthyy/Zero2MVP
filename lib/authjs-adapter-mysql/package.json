@@ -1,0 +1,56 @@
+{
+  "name": "authjs-adapter-mysql",
+  "version": "0.0.6",
+  "description": "Mysql adapter for next-auth.",
+  "homepage": "https://authjs.dev",
+  "repository": "https://github.com/roelandmoors/authjs-adapter-mysql",
+  "bugs": {
+    "url": "https://github.com/roelandmoors/authjs-adapter-mysql/issues"
+  },
+  "author": "github.com/roelandmoors",
+  "main": "dist/index.js",
+  "license": "ISC",
+  "keywords": [
+    "next-auth",
+    "next.js",
+    "oauth",
+    "mysql"
+  ],
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "jest tests/mysql.test.ts",
+    "build": "tsc"
+  },
+  "files": [
+    "README.md",
+    "dist"
+  ],
+  "devDependencies": {
+    "@next-auth/adapter-test": "https://gitpkg.now.sh/nextauthjs/next-auth/packages/adapter-test?main",
+    "@next-auth/tsconfig": "https://gitpkg.now.sh/nextauthjs/next-auth/packages/tsconfig?main",
+    "@swc/core": "^1.3.42",
+    "@swc/jest": "^0.2.24",
+    "dotenv": "^16.0.3",
+    "jest": "^27.5.1",
+    "node-fetch": "^3.3.1",
+    "ts-jest": "^27.0.3"
+  },
+  "peerDependencies": {
+    "@planetscale/database": "^1.7.0",
+    "mysql2": "^3.2.3",
+    "nanoid": "^3.3.6"
+  },
+  "prettier": {
+    "printWidth": 120
+  },
+  "jest": {
+    "preset": "@next-auth/adapter-test/jest",
+    "transformIgnorePatterns": []
+  },
+  "dependencies": {
+    "next-auth": "^4"
+  }
+}
